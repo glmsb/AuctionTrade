@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 设置选中图片 -->
+    <item android:drawable="@mipmap/ic_switch_on" android:state_checked="true"/>
+    <!-- 设置未选中图片 -->
+    <item android:drawable="@mipmap/ic_switch_off" android:state_checked="false"/>
+
+</selector>

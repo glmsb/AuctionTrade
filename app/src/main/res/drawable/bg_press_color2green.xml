@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--按下后控件背景颜色由默认变为灰色-->
+    <item android:drawable="@color/c_emphasize_green" android:state_pressed="true"/>
+
+</selector>

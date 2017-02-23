@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/c_major_layout_bg"
+    android:orientation="vertical">
+
+    <com.wyd.auctiontrade.view.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_dream_name"
+        style="@style/add_right"
+        android:gravity="start"
+        android:hint="你想要神马都可以告诉我呀"
+        android:lines="3" />
+
+
+    <EditText
+        android:id="@+id/et_dream_description"
+        style="@style/add_right"
+        android:gravity="start"
+        android:hint="定制你的个性需求呗"
+        android:lines="5" />
+
+
+    <TextView
+        android:id="@+id/tv_dream_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/c_white"
+        android:drawableEnd="@mipmap/ic_next"
+        android:drawablePadding="10dp"
+        android:drawableRight="@mipmap/ic_next"
+        android:gravity="start"
+        android:hint="请选择一种类型呗"
+        android:textColor="@color/c_main"
+        android:padding="15dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_dream_type"
+        style="@style/add_right"
+        android:hint="亲，请输入类型哦"
+        android:visibility="gone" />
+
+</LinearLayout>

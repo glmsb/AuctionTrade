@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_major_layout_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.wyd.auctiontrade.view.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_auction_name"
+        style="@style/add_right"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:hint="一个过目不忘的拍品名" />
+
+    <EditText
+        android:id="@+id/et_auction_price"
+        style="@style/add_right"
+        android:hint="一个合理的起拍价"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/et_auction_description"
+        style="@style/add_right"
+        android:gravity="top"
+        android:hint="简单描述一下你的拍品"
+        android:lines="4" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/c_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:text="拍卖时长"
+                android:textColor="@color/c_main"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/tbtn_auction_time"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_toggle_button_switch"
+                android:checked="true"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <View
+            style="@style/divider_view" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_auction_time_ref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="选择拍卖时长"
+                android:textColor="@color/c_main"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_auction_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_auction_time_ref"
+                android:drawablePadding="8dp"
+                android:drawableRight="@mipmap/ic_next"
+                android:gravity="end"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="1小时"
+                android:textColor="@color/c_main"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View style="@style/divider_view" />
+
+    <RelativeLayout
+        android:id="@+id/rl_add_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/c_white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imv_camera"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_camera" />
+
+        <TextView
+            android:id="@+id/tv_add_photo"
+            style="@style/add_left"
+            android:layout_toRightOf="@id/imv_camera"
+            android:text="添加图片" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imv_camera"
+            android:layout_below="@id/tv_add_photo"
+            android:layout_toRightOf="@id/imv_camera"
+            android:background="@null"
+            android:hint="给你的拍品提升一下颜值呗"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_photo_selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c_white"
+        android:gravity="center"
+        android:numColumns="4"
+        android:padding="8dp"
+        android:scrollbars="none"
+        android:verticalSpacing="15dp"
+        android:visibility="gone" />
+
+    <View
+        style="@style/divider_view"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@drawable/photo_bg"
+        android:padding="1dip"
+        android:scaleType="centerCrop" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent_background_70">
+
+
+    <ListView
+        android:id="@+id/lv_choose_time"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c_white"
+        android:divider="@color/c_emphasize_green"
+        android:dividerHeight="0.3dp"
+        android:gravity="center"/>
+
+</RelativeLayout>

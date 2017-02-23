@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_major_layout_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.wyd.auctiontrade.view.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:text="方式一："
+            android:textColor="@color/c_main"
+            android:textSize="@dimen/top_bar_text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="请填写注册时的邮箱:" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@mipmap/et_cursor_line_blue"
+            android:textSize="@dimen/content_text_size" />
+
+        <TextView
+            android:id="@+id/tv_pmt_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/text_email_check"
+            android:textColor="@color/c_main"
+            android:textSize="@dimen/top_bar_text_size"
+            android:textStyle="italic"
+            android:visibility="gone" />
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="正在通过短信验证码重置密码"
+            android:textColor="@color/c_main"
+            android:textSize="@dimen/top_bar_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_mobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_et_input"
+                android:hint="请填写你注册时的电话号码"
+                android:inputType="phone"
+                android:textColor="@color/c_main"
+                android:textCursorDrawable="@mipmap/et_cursor_line_blue"
+                android:textSize="@dimen/content_text_size" />
+
+            <Button
+                android:id="@+id/btn_get_sms_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_btn_login"
+                android:textColor="@color/c_white"
+                android:text="获取验证码" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_ems_code"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_et_input"
+                android:hint="请填写验证码"
+                android:inputType="phone"
+                android:textColor="@color/c_main"
+                android:textCursorDrawable="@mipmap/et_cursor_line_blue"
+                android:textSize="@dimen/content_text_size" />
+
+
+            <EditText
+                android:id="@+id/et_new_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bg_et_input"
+                android:gravity="center"
+                android:hint="请填写新密码"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/c_main"
+                android:textCursorDrawable="@mipmap/et_cursor_line_blue"
+                android:textSize="@dimen/content_text_size"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

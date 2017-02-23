@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--渐变角度(PS：当angle=0时，渐变色是从左向右。
+    当angle=90时为从下往上。angle必须为45的整数倍)-->
+    <gradient
+        android:angle="45"
+        android:endColor="#FF72CAE1"
+        android:startColor="#FFACDAE5"/>
+</shape>

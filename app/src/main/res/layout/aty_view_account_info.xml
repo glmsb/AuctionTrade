@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/c_major_layout_bg"
+    android:orientation="vertical">
+
+    <com.wyd.auctiontrade.view.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/c_white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/normalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:ems="4"
+                android:drawableLeft="@mipmap/ic_user_name"
+                android:drawableStart="@mipmap/ic_user_name"
+                android:drawablePadding="5dp"
+                android:text="姓名" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <View style="@style/divider_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/normalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:ems="4"
+                android:drawableLeft="@mipmap/ic_user_sex"
+                android:drawableStart="@mipmap/ic_user_sex"
+                android:drawablePadding="5dp"
+                android:text="性别" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/c_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/normalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:ems="4"
+                android:drawableLeft="@mipmap/ic_user_mobile"
+                android:drawableStart="@mipmap/ic_user_mobile"
+                android:drawablePadding="5dp"
+                android:text="手机" />
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <View style="@style/divider_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/normalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:ems="4"
+                android:drawableLeft="@mipmap/ic_user_email"
+                android:drawableStart="@mipmap/ic_user_email"
+                android:drawablePadding="5dp"
+                android:text="邮箱" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--顶部标题栏高度-->
+    <dimen name="top_bar_height">45dp</dimen>
+    <!-- 顶部标题栏两端的文字大小 -->
+    <dimen name="top_bar_text_size">16sp</dimen>
+    <!--顶部标题的文字大小 -->
+    <dimen name="top_bar_center_text_size">18sp</dimen>
+
+    <!--金额部分文字的大小 -->
+    <dimen name="money_text_size">20sp</dimen>
+
+    <!--正常文字的大小 -->
+    <dimen name="content_text_size">15sp</dimen>
+
+
+</resources>

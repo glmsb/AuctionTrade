@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_major_layout_bg"
+    android:orientation="vertical">
+
+    <com.wyd.auctiontrade.view.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_transparent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@color/c_white"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imv_auction_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/tv_pic_number"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/ic_cycle"
+                    android:gravity="center"
+                    android:text="5张"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/top_bar_center_text_size" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_latest_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/c_white"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:textColor="@color/c_emphasize_blue"
+                android:textSize="@dimen/money_text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/c_white"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@mipmap/ic_count_down"
+                    android:drawablePadding="5dp"
+                    android:text="拍卖倒计时"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="@dimen/top_bar_center_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_time_limit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_red_light" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_do_auction"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/c_white"
+                android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imv_sub"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/ic_input_price"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_minus_price" />
+
+                <EditText
+                    android:id="@+id/et_add_price"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/ic_input_price"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="20"
+                    android:textColor="@color/green" />
+
+                <ImageView
+                    android:id="@+id/imv_add"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/ic_input_price"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_add_price" />
+
+                <TextView
+                    android:id="@+id/tv_bid_price"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="@dimen/money_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_auction"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/coral"
+                    android:drawableEnd="@mipmap/ic_logo"
+                    android:drawableRight="@mipmap/ic_logo"
+                    android:gravity="center"
+                    android:text="竞拍"
+                    android:textColor="@color/c_white"
+                    android:textSize="@dimen/top_bar_text_size" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/c_white"
+                android:padding="15dp"
+                android:text="拍品描述"
+                android:textColor="@color/c_major_assist"
+                android:textSize="@dimen/content_text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp" />
+
+            <TextView
+                android:id="@+id/tv_auction_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c_white"
+                android:lineSpacingExtra="5dp"
+                android:padding="15dp"
+                android:textColor="@color/c_main"
+                android:textSize="@dimen/content_text_size" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wyd.auctiontrade.view.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azure"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_auction"
+            style="@style/summary_radioButton"
+            android:checked="true"
+            android:drawableTop="@drawable/ic_auction_gray2deep"
+            android:text="我要竞拍" />
+
+        <RadioButton
+            android:id="@+id/rb_dream"
+            style="@style/summary_radioButton"
+            android:checked="false"
+            android:drawableTop="@drawable/ic_dream_gray2deep"
+            android:text="我有梦想" />
+
+        <RadioButton
+            android:id="@+id/rb_personal"
+            style="@style/summary_radioButton"
+            android:checked="false"
+            android:drawableTop="@drawable/ic_personal_gray2deep"
+            android:text="我的天堂" />
+    </RadioGroup>
+</LinearLayout>

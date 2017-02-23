@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">简.拍</string>
+    <string name="text_login_username">账号</string>
+    <string name="hint_login_username">请输入手机号码</string>
+    <string name="text_login_password">密码</string>
+    <string name="btn_login">登录</string>
+    <string name="text_register">注册 </string>
+    <string name="text_register_pmt">没有账号？</string>
+    <string name="btn_forget_pass">忘记密码</string>
+    <string name="hint_login_password">请输入您的密码</string>
+    <string name="pmt_account_empty">账号不能为空哦(⊙o⊙)</string>
+    <string name="pmt_password_empty">密码不能为空哦(⊙o⊙)</string>
+    <string name="pmt_check_account">请输正确的手机号</string>
+    <string name="pmt_input_confirm_pw">请输入正确的密码</string>
+    <string name="pmt_sure_password_empty">请再次确认密码</string>
+    <string name="pmt_password_error">两次输入的密码不匹配</string>
+    <string name="pmt_email_empty">邮箱还没有填写哦(⊙o⊙)</string>
+    <string name="pmt_email_error">邮箱格式错误，请检查</string>
+    <string name="pmt_sex_empty">你是男神还是靓女？</string>
+    <string name="pmt_name_empty">你的名字还没与填写哦(⊙o⊙)</string>
+
+    <!-- PullToRefreshListView -->
+    <string name="init_data_fail">初始化数据失败</string>
+    <string name="is_pull_down_load">上拉加载</string>
+    <string name="is_pull_load_more">加载更多</string>
+    <string name="is_loading">努力加载中&#8230;</string>
+    <string name="loading_success">加载成功</string>
+    <string name="is_load_fail">加载失败</string>
+    <string name="is_loaded_all">已加载全部</string>
+    <string name="is_pull_down_refresh">下拉刷新</string>
+    <string name="is_refresh_start">开始刷新</string>
+    <string name="is_refreshing">努力刷新中&#8230;</string>
+    <string name="refresh_success">刷新成功</string>
+    <string name="load_fail_for_net_bad">网络不给力，刷新失败</string>
+    <string name="list_data_empty">暂时没有相关数据</string>
+
+
+    <string name="text_warning">你的拍品将不能参与竞拍！</string>
+    <string name="text_pic_number">%1$s张</string>
+    <string name="text_email_check">重置密码请求成功，请到 %1$s 邮箱进行密码重置操作</string>
+    <string name="text_about">\t\t\t简拍，让拍卖更简单。简.拍,一个全新的电子商务拍卖平台，将系统部署在移动互联网上，利用移动互联网的碎片时间，用户可以不受时间和空间的限制发布想售出的商品，也可以提出自己的需求商品，重新定义了拍卖流程和交易模式。同时突破了以前拍卖场所，参与人员，竞拍的限制，让竞拍灵活起来，让大多数人能参与进来，保留了以前竞拍带来的趣味性和现场影响力，让用户在手机的两端也能感受到竞拍带来的快感和诱惑力。</string>
+
+</resources>

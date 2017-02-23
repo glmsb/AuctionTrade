@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.wyd.auctiontrade.view.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/lv_my_auction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/c_emphasize_green"
+        android:dividerHeight="0.3dp"
+        android:scrollbars="none" />
+
+    <include layout="@layout/v_list_data_empty" />
+</LinearLayout>

@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <!--边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--背景透明-->
+        <item name="android:windowBackground">@color/c_transparent</item>
+        <!--activity不变暗-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!--整个app应用中字体的主要样式（颜色和大小）-->
+    <style name="normalText">
+        <item name="android:textColor">@color/c_main</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--radioButton的样式-->
+    <style name="summary_radioButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@drawable/text_color_black2blue</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!--添加界面，左边的文字提示样式，一般用于左边的TextView-->
+    <style name="add_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/c_emphasize_blue</item>
+        <item name="android:textSize">@dimen/content_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--添加界面，右边的文字提示样式，一般用于右边的EditText-->
+    <style name="add_right">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:textColor">@color/c_main</item>
+        <item name="android:textSize">@dimen/content_text_size</item>
+        <item name="android:background">@drawable/bg_et_input</item>
+        <item name="android:textCursorDrawable">@mipmap/et_cursor_line_blue</item>
+    </style>
+
+    <!--分割线的布局-->
+    <style name="divider_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:background">@color/c_major_assist</item>
+    </style>
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="auction_times_text">
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>30分钟</item>
+        <item>1小时</item>
+        <item>2小时</item>
+        <item>3小时</item>
+    </string-array>
+
+    <integer-array name="auction_times_number">
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+    </integer-array>
+
+    <string-array name="dream_type">
+        <item>时尚鞋靴</item>
+        <item>花鸟文娱</item>
+        <item>男女服装</item>
+        <item>日用百货</item>
+        <item>珠宝配饰</item>
+        <item>家电办公</item>
+        <item>动漫游戏</item>
+        <item>家装建材</item>
+        <item>护肤彩妆</item>
+        <item>美食茶酒</item>
+        <item>手机数码</item>
+        <item>字画文物</item>
+        <item>其他</item>
+    </string-array>
+
+</resources>
